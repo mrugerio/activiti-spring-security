@@ -16,8 +16,16 @@ grails.project.dependency.resolution = {
 		mavenRepo 'http://repo.spring.io/milestone'
 	}
 
+    dependencies {
+        runtime 'org.springframework:spring-aop:4.0.5.RELEASE'
+        runtime 'org.springframework:spring-expression:4.0.5.RELEASE'
+        compile "net.sf.ehcache:ehcache-core:2.4.8"
+    }
+
 	plugins {
-		compile ":activiti:5.15.1"
+
+
+        compile ":activiti:5.15.1"
 		compile ':spring-security-core:2.0-RC3'
 
 		compile ':hibernate:3.6.10.15', ':tomcat:7.0.53', ':scaffolding:2.0.3' {
